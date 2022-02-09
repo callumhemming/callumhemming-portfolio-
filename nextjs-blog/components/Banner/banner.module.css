@@ -1,0 +1,7 @@
+@import "../../utils/colors.css";
+
+.bannerContainer{
+    background-color: var(--light-accent);
+    width:1000px;
+    height:1000px;
+}
