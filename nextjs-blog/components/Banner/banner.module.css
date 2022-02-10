@@ -1,7 +1,8 @@
-@import "../../utils/colors.css";
+
 
 .bannerContainer{
-    background-color: var(--light-accent);
-    width:1000px;
-    height:1000px;
+    display: flex;
+    background-color: #F55045;
+    width:100vw;
+    height:70vh;
 }
