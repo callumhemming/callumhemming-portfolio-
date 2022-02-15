@@ -14,6 +14,7 @@ console.log(name)
 
     {/* <Splash /> */}
     <h1>{name.results[0].name.first}</h1>
+    <button>Click me :D</button>
     <Profile />
     {/* <Github /> */}
     {/* <Blog /> */}
