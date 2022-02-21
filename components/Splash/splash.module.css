@@ -1,0 +1,21 @@
+.banner{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+   
+
+    
+
+
+}
+
+.avatar{
+    position: absolute;
+    left:-10%;
+    top: -10%;
+    border:50px var(--dark-accent) inset ;
+    filter: drop-shadow(30px 10px 4px #4444dd)
+}
