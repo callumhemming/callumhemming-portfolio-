@@ -1,23 +1,23 @@
 import React from "react";
-import style from "./splash.module.css"
+import style from "./splash.module.css";
 import { Avatar } from "antd";
 import { Typography } from "antd";
 
+export default function Splash({children}) {
+  const { Title } = Typography;
+  return (
+    <>
+      
+        <div className={style.SplashContainer + " pattern"}>
 
-export default function Splash() {
-const {Title} = Typography
-    return (
-        <>
-                      <div className="pattern">
-                
-                </div>
-            <Avatar className={style.avatar} size={600} src="/me.jpg"/>
-            
-  
-                <Title>Hi! I'm Callum Hemming</Title>
-                
-          
-        </>
+            <div className={style.banner}>
+        <Avatar className={style.avatar} size={500} src="/me.jpg" />
+          <h1 className={style.heading}>Hi! I'm Callum Hemming</h1>
+            </div>
+         
 
-    )
+     {children}
+      </div>
+    </>
+  );
 }

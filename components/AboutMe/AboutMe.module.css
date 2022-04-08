@@ -1,0 +1,12 @@
+.introContainer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.intro{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    font-size: 1.5rem;
+
+}

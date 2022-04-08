@@ -1,13 +1,15 @@
 import React from "react"
 import Splash from "../components/Splash"
+import AboutMe from "../components/AboutMe"
+import NavBar from "../components/navBar"
 export default function Home() {
   return (
     <>
     
-    <Splash />
-    {/* // <Profile /> */}
-
-    <h1>TEST</h1>
+    <Splash>
+      <NavBar />
+    </Splash>
+    <AboutMe/>
     
     </>
 

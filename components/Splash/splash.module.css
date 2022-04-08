@@ -1,21 +1,32 @@
-.banner{
-
+.SplashContainer{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    overflow-wrap: inherit;
+    flex-direction: column;
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner{
+    display: flex;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-   
-
-    
-
-
 }
 
+
+
 .avatar{
-    position: absolute;
     left:-10%;
-    top: -10%;
+    top: -60%;
     border:50px var(--dark-accent) inset ;
     filter: drop-shadow(30px 10px 4px #4444dd)
+}
+
+
+.heading{
+    font-family: var(--title-font);
+    font-size: 4em;
+    font-weight:bold;
 }

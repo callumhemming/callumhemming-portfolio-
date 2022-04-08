@@ -1,0 +1,14 @@
+.navBarContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+.button{
+    font-family: var(--title-font);
+   width: 10em;
+   padding: 9px;
+   
+}
