@@ -1,32 +1,49 @@
 .SplashContainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
     overflow-wrap: inherit;
-    flex-direction: column;
-
-
+    flex-direction: row;
+    filter:drop-shadow(100, 2, 3);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+height:30vh;
+  z-index: 1;
 }
 .banner{
     display: flex;
     align-items: center;
+   
 }
+
 
 
 
 .avatar{
-    left:-10%;
-    top: -60%;
-    border:50px var(--dark-accent) inset ;
-    filter: drop-shadow(30px 10px 4px #4444dd)
+   
+    border:50px var(--light-accent) inset ;
+    filter: drop-shadow(30px 10px 4px #4444dd);
+    margin:1em;
+    width: 30%;
+    height:20%;
+    
 }
+
+
 
 
 .heading{
     font-family: var(--title-font);
+    color:white;
     font-size: 4em;
-    font-weight:bold;
+    /* font-weight:bold; */
+    margin: 1em;
+font-weight: bolder;
+    /* -webkit-text-stroke-width: 0.5px; */
+  
+  
 }
+

@@ -1,12 +1,28 @@
-.introContainer{
+.aboutMeContainer{
     display: flex;
-    justify-content: center;
-    width: 100vw;
+   
+    flex-direction: column;
+    width: 70vw;
+    height: 30vw;
+    padding:1em;
+    margin:1em;
 }
-.intro{
-    display: flex;
-    width: 50vw;
-    justify-content: center;
-    font-size: 1.5rem;
 
+.title, .textBlock{
+ align-self: flex-start;
 }
+
+.title{
+    justify-self: start;
+    margin-top: 2em;
+    font-size: 2.3rem;
+}
+
+.textBlock{
+    font-size: 2em;
+}
+
+.break{
+    color:black;
+}
+

@@ -1,0 +1,23 @@
+.techStackContainer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 0.5em;
+ height: 30%;
+ width: 15%;
+ font-size: 4em;
+ flex-wrap: wrap;
+ gap:0.5em;
+ margin:1em;
+}
+
+.react{
+    color:blue;
+}
+
+.javascript{
+    color:#F0DB4F;
+}
+
+.css{color:blue}
+

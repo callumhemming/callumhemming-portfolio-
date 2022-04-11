@@ -1,15 +1,17 @@
 import React from "react"
 import Splash from "../components/Splash"
 import AboutMe from "../components/AboutMe"
-import NavBar from "../components/NavBar"
+import TechStack from "../components/TechStack"
+
+import style from "../styles/homepage.module.css"
+
 export default function Home() {
   return (
     <>
-    
-    <Splash>
-      <NavBar />
-    </Splash>
-    <AboutMe/>
+    <div className={style.row}>
+    <TechStack position={style.left}/>
+    <AboutMe position={style.center}/>
+    </div>
     
     </>
 

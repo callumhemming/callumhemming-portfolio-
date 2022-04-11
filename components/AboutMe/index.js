@@ -1,29 +1,26 @@
-import style from "./AboutMe.module.css"
+import style from "./AboutMe.module.css";
+
+export default function AboutMe({position}) {
+  return (
+    <article className={style.aboutMeContainer + " " + position}>
+      <h2 className={style.title}>About me</h2>
+      <hr className={style.break}/>
+      <p className={style.textBlock}>
+        
+      Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
 
-export default function AboutMe(){
+Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
 
-    return(
-        <div id="about-me" className={style.introContainer}>
-          <p className={style.intro}>
-            From studying Psychology, to Film, to 3D Printing, I've always been
-            drawn tocrafts that require a mixture of critical thinking, problem
-            solving and out of-the-box creativity. In my final year of
-            University, the impact of the pandemiccreated a seemingly unsolvable
-            problem; creating a film in a pandemic. Isolved this problem by
-            turning my story in code. I taught myself basic HTML , CSS and
-            JAVASCRIPT I found that I was utterly enthralled in the code and in
-            a life changing twist, Iwas served an advert for the School of Code
-            and haven't looked back. I've gonefrom DOM manipulation to eloquent
-            React , I can now effortlessly connect abackend to a frontend,
-            controlling data from a user, all the way to a PostgreSQL database.
-            Since the School Of Code, I've become a true believer in the Agile
-            methodology,especially paired programming , which I've found
-            incredibly efficient Half these terms I had never heard of 4 months
-            ago. I'm a fast and obsessive learner , a true team player and
-            incredibly excited tostart a new career in tech
-          </p>
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
 
-         </div>
-    )
+Where can I get some?
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from rep
+        
+        
+        </p>
+    </article>
+  );
 }

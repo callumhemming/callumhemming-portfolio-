@@ -4,10 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap"
-          rel="stylesheet"
-        />
+      <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet"/>
       </Head>
       <body>
         <Main />
