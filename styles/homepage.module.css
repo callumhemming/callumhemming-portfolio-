@@ -1,8 +1,13 @@
 .row{
+    margin-top: 5em;
     display: flex;
     align-items: center;
     width: 100vw;
     /* border: 1px red solid; */
+}
+
+.rowMobile{
+    flex-direction: column-reverse;
 }
 
 .left{

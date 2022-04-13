@@ -1,8 +1,9 @@
 import style from "./AboutMe.module.css";
+import classListify from "../../utils/classListify.js";
 
-export default function AboutMe({position}) {
+export default function AboutMe({classList}) {
   return (
-    <article className={style.aboutMeContainer + " " + position}>
+    <article className={  classListify([style.aboutMeContainer],[classList])  }>
       <h2 className={style.title}>About me</h2>
       <hr className={style.break}/>
       <p className={style.textBlock}>

@@ -7,6 +7,15 @@
     z-index: 2;
 }
 
+
+
+.navBarMobile{
+    flex-direction: column;
+    position: absolute;
+    bottom: 2em;
+    left:2em;
+}
+
 .buttonLeft{
     justify-self:normal;
 }
@@ -16,4 +25,12 @@
    padding: 9px;
    
 }
-
+.burger{
+    align-self: center;
+    width: 10em;
+    
+}
+.burgerOpen{
+    transform: rotate(90deg);
+    
+}
