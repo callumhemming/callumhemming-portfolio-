@@ -8,6 +8,7 @@
 
 .rowMobile{
     flex-direction: column-reverse;
+    flex-wrap: wrap;
 }
 
 .left{
