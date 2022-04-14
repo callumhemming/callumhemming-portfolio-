@@ -13,9 +13,11 @@ export default function Home() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   return (
     <>
-    <div className={  classListify([style.row],[isTabletOrMobile? style.rowMobile : ""]) }>
-    <TechStack classList={[style.left]}/>
-    <AboutMe classList={[style.center]}/>
+    <h1>Web Developer!</h1>
+    <div className={  classListify([style.row],[]) }>
+    <AboutMe classList={[]}/>
+    <hr></hr>
+    <TechStack classList={[]}/>
     </div>
     
     </>

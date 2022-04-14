@@ -1,21 +1,19 @@
 .row{
-    margin-top: 5em;
+    display: flex;
     display: flex;
     align-items: center;
-    width: 100vw;
-    /* border: 1px red solid; */
+    flex-direction: column;
+    height: 10000px;
+    border: 1px yellow solid;
 }
 
-.rowMobile{
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-}
 
-.left{
+
+/* .left{
     justify-self: flex-start;
     align-self:flex-start;
     
-}
+} */
 
 .center{
     justify-self:center;

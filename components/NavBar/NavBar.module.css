@@ -4,33 +4,43 @@
     gap:2em;
     margin: 0.5em;
     padding: 1em;
-    z-index: 2;
+    
 }
-
-
 
 .navBarMobile{
+    display: flex;
     flex-direction: column;
-    position: absolute;
+    
+    gap:2em;
+    width: 1em;
+    height: 50%;
+    margin: 0.5em;
+    padding: 1em;
+    position: fixed;
     bottom: 2em;
     left:2em;
+
+    border: 1px red solid;
 }
 
-.buttonLeft{
-    justify-self:normal;
-}
-.button{
-    font-family: var(--title-font);
-   width: 10em;
-   padding: 9px;
-   
-}
 .burger{
     align-self: center;
-    width: 10em;
+    position: fixed;
+    bottom: 2em;
+    left:2em;
+    
     
 }
 .burgerOpen{
     transform: rotate(90deg);
     
 }
+
+
+.button{
+    font-family: var(--title-font);
+   width: 10em;
+   padding: 9px;
+   
+}
+
