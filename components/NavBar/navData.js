@@ -1,6 +1,6 @@
 import Link from "next/link"
 import style from "./NavBar.module.css"
-import uuid from "uuidv4"
+import {uuid} from "uuidv4"
 
 const navigation = [
     {name:"CV", link:"/callumhemmingcv.pdf"},
