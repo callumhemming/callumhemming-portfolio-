@@ -4,21 +4,27 @@ import AboutMe from "../components/AboutMe"
 import TechStack from "../components/TechStack"
 import { useMediaQuery } from "react-responsive"
 import classListify from "../utils/classListify.js"
+import Avatar from "antd/lib/avatar/avatar"
+
 
 import style from "../styles/homepage.module.css"
-
+import Image from "next/image"
 
 export default function Home() {
 
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   return (
     <>
-    <h1>Web Developer!</h1>
-    <div className={  classListify([style.row],[]) }>
-    <AboutMe classList={[]}/>
+   <Splash/>
+ 
+     
+    
+    {/* <AboutMe classList={[]}/>
     <hr></hr>
     <TechStack classList={[]}/>
-    </div>
+    </div> */}
+
+    <AboutMe/>
     
     </>
 

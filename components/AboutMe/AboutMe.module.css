@@ -1,29 +1,17 @@
+
 .aboutMeContainer{
-    display: flex;
-   
-    flex-direction: column;
-    width: 100vw;
-    height: 145vw;
-    padding:1em;
-    
+ display: flex;
+height: 100vh;
+}
+
+
+.sideBar{
+    background-color: purple;
+    width: 20vh;
 
 }
 
-.title, .textBlock{
- align-self: flex-start;
+.aboutMeContent{
+width: 100%;
+background-color: orange;
 }
-
-.title{
-    justify-self: start;
-    
-    font-size: 2.3rem;
-}
-
-.textBlock{
-    font-size: 2em;
-}
-
-.break{
-    color:black;
-}
-

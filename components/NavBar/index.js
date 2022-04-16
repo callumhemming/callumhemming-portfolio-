@@ -12,12 +12,13 @@ export default function NavBar() {
 
   return (
     <>
-    {isTabletOrMobile&& <Burger />}
-     {!isTabletOrMobile&&
+    {/* {isTabletOrMobile&& <Burger />} */}
+    
+    {
      <div className={style.navBarContainer}>
         
-     {navArray}
 
+     {navArray}
  </div>
      } 
     </>

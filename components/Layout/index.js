@@ -7,8 +7,8 @@ export default function Layout({children}){
 
     return(
 <>
-<NavBar/>
-<Splash/>
+{/* <NavBar/> */}
+
 
 {children}
 </>
