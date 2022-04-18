@@ -17,8 +17,8 @@ export default function Home() {
     <>
    <Splash/>
  
-     <hr/>
-    
+  
+  
     {/* <AboutMe classList={[]}/>
     <hr></hr>
     <TechStack classList={[]}/>

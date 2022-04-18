@@ -1,11 +1,13 @@
 .techStackContainer{
- display: flex;
- justify-content: center;
- align-items: center;
- width: 80vw;
- height: 80vh;
+
+ display: grid;
+ grid-template-columns:  repeat(10%, 3);
+ grid-template-rows: repeat(1fr, 5);
+
+ /* grid-auto-flow: 100%; */
+ height: 100vh;
  font-size: 5em;
- flex-wrap: wrap;
+
  gap:0.5em;
  margin:0.5rem;
  padding: 0.5rem;
@@ -14,13 +16,69 @@
 
 }
 
+.ToolBoxContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ToolBoxContainer > h4{
+    font-size:7em;
+}
+
+
+.techStackContainer > *{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .react{
+    grid-area: 3/2/span 1/ span 1;
     color:blue;
+
+}
+
+.node{
+    grid-area: 3/1/span 1/ span 1;
+}
+
+.express{
+    grid-area: 3/3/span 1/ span 1;
 }
 
 .javascript{
+    grid-area: 2/2/span 1/ span 1;
     color:#F0DB4F;
 }
 
-.css{color:blue}
+.css{
+    grid-area: 2/3/span 1/ span 1;
+    color:blue
+}
+
+.html{
+    grid-area: 2/1/span 1/ span 1;
+}
+
+.next{
+    grid-area: 4/1/span 1/ span 1;
+}
+
+.github{
+    grid-area: 4/2/span 1/ span 1;
+}
+
+.git{
+    grid-area: 4/3/span 1/ span 1;
+}
+
+.postgres{
+    grid-area: 5/2/span 1/ span 1;
+}
+
+
 

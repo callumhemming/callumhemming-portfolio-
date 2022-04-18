@@ -13,8 +13,12 @@ export default function TechStack({classList}){
 
 
     return(
-    <div className={classListify( [style.techStackContainer], [ classList]     )}>
-            <h4> Toolbox</h4>
+        <div className={style.ToolBoxContainer}>
+        
+        <h4>Tool Box</h4>
+        
+        <div className={classListify( [style.techStackContainer], [ classList]     )}>
+           
             <Tooltip title="React">
             <DiReact className={style.react}/>
             </Tooltip>
@@ -45,6 +49,7 @@ export default function TechStack({classList}){
             <Tooltip title="PostgreSQL">
             <SiPostgresql className={style.postgres}/>
             </Tooltip>
+        </div>
         </div>
     )
 }
