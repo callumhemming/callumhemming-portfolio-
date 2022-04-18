@@ -22,11 +22,11 @@ export default function Splash() {
         <div className={style.backgroundFilter}></div>
 
         <div className={style.avatar}>
-          <Avatar className={style.avatarBorder} size={230} src="/me.jpg" />
+          <Avatar className={style.avatarBorder} size={250} src="/me.jpg" />
         </div>
-
+        {console.log(isTabletOrMobile ? 250 : 400)}
         <div className={style.blobContainer}>
-          <div className={style.blob + " " + style.blobMobile}>
+          <div className={style.blob}>
             <Image src="/Blob.svg" layout="fill" />
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function Splash() {
             <div className={style.arrowLeft}>
               <Image src="/arrow.svg" layout="fill" />
             </div>
-            <div className={style.progressButton}>Let's Go!</div>
+            <div className={style.progressButton}>LET'S GO!</div>
             <div className={style.arrowRight}>
               <Image src="/arrow.svg" layout="fill" />
             </div>
@@ -44,10 +44,10 @@ export default function Splash() {
         </Link>
 
         <div className={style.text}>
-          <h2 className={style.secondaryTitle + " " + style.widthHundred}>Callum Hemming</h2>
-          <h1 className={style.mainTitle + " " + style.widthHundred   }>Full Stack Web Developer</h1>
+          <h2 className={style.secondaryTitle}>Callum Hemming</h2>
+          <h1 className={style.mainTitle}>Full Stack Web Developer</h1>
           
-          {console.log(classListify([style.mainTitle],[isTabletOrMobile? style.widthHundred : null]))}
+         
           <h3 className={style.thirdTitle}>
             Looking to jump into the world of tech!
           </h3>

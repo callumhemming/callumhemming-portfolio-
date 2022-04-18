@@ -10,7 +10,7 @@ export default function AboutMe() {
 
     <div className={style.sideBar}><NavBar/></div>
     <div className={style.aboutMeContent}>
-      <h1>About me</h1>
+      <h1 className={style.aboutMeTitle}>About me</h1>
       <hr></hr>
       <p>About me text here!</p>
     </div>
