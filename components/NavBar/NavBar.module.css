@@ -1,34 +1,32 @@
 .navBarContainer{
+    position: absolute;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    
     gap:5em;
     margin: 0.5em;
     padding: 1em;
     flex-direction: column;
+
+    transition-duration: 100ms;
+
+    border: 1px red solid;
+
     
 }
 
-.navBarMobile{
-    display: flex;
-    flex-direction: column;
-    
-    gap:2em;
-    width: 1em;
-    
-    margin: 0.5em;
-    padding: 1em;
-    position: fixed;
-    bottom: 2em;
-    left:2em;
-transition-duration: 100ms;
-height: 50%;
-    
-}
+
+/* .menu{
+    /* position: relative; */
+/* }  */
+
 
 
 
 .burger{
+    z-index: 50;
     align-self: center;
     position: fixed;
     bottom: 2em;

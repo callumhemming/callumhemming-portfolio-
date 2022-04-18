@@ -1,23 +1,39 @@
 
 .aboutMeContainer{
- display: flex;
+ display: grid;
+ grid-template-columns: 20% 1fr;
+ grid-template-rows: 19.4% 1fr ;
 height: 100vh;
+width: 100vw;
+overflow: hidden;
 }
 
 
 .sideBar{
+    grid-area: 1/1 / -1 /2;
     background-color: purple;
-    width: 20vh;
+    
 
 }
 
-.aboutMeContent{
+.aboutMeContentContainer{
+    grid-area: 1/2/-1/-2;
 width: 100%;
 background-color: #F7B801;
 }
 
 .aboutMeTitle{
+    font-weight: 700;
+    font-family: Poppins;
     margin: 0.5em;
     padding: 0.5em;
     font-size: 4em;
+}
+
+.Text{
+    grid-area: 2/2/-1/-1;
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 1.5em;
+    
 }

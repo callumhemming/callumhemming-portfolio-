@@ -17,7 +17,7 @@ export default function Home() {
     <>
    <Splash/>
  
-     
+     <hr/>
     
     {/* <AboutMe classList={[]}/>
     <hr></hr>
@@ -25,6 +25,10 @@ export default function Home() {
     </div> */}
 
     <AboutMe/>
+    <div className={style.techStackContainer}>
+
+    <TechStack/>
+    </div>
     
     </>
 

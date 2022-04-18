@@ -1,26 +1,36 @@
+import { GiHamburgerMenu } from "react-icons/gi";
 import style from "./NavBar.module.css";
-import Burger from "./Burger.js";
-import Link from "next/link";
-import { useMediaQuery } from "react-responsive";
-import navArray from "./navData.js"
-
-
+import Link from "next/dist/client/link";
+import React, { useState } from "react";
+import classListify from "../../utils/classListify.js";
+import navArray from "./navData.js";
 
 export default function NavBar() {
-
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-    {/* {isTabletOrMobile&& <Burger />} */}
-    
-    {
      <div className={style.navBarContainer}>
+
+        {isOpen && 
+        <div className={style.menu}>{navArray}</div>}
+
+       
+
+          <GiHamburgerMenu
+          size={60}
+            className={classListify(
+              [style.burger],
+              [isOpen ? style.burgerOpen : ""]
+            )}
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
+       
         
 
-     {navArray}
- </div>
-     } 
-    </>
+      </div>
+       
+    
   );
 }

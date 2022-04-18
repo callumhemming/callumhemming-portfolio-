@@ -1,12 +1,10 @@
-.row{
-    display: flex;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 10000px;
-    
-}
 
+.techStackContainer{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -16,7 +14,7 @@
     
 } */
 
-.center{
+/* .center{
     justify-self:center;
     align-self: flex-start;
-}
+} */
