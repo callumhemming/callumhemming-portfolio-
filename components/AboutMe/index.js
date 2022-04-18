@@ -3,16 +3,28 @@ import classListify from "../../utils/classListify.js";
 import NavBar from "../NavBar";
 
 export default function AboutMe() {
+
+  const size = 100;
   return (
 <>
 
     <div id="aboutme" className={style.aboutMeContainer}>
 
-    <div className={style.sideBar}><NavBar/></div>
-    <div className={style.aboutMeContent}>
-      <h1>About me</h1>
+    <div className={style.sideBar}></div>
+    <div className={style.aboutMeContentContainer}>
+      <style jsx>
+        {
+          `
+          .aboutMeTitle{
+            font-size: ${size}em
+
+        }
+        `
+        }
+      </style>
+      <h1 className="aboutMeTitle">About me</h1>
       <hr></hr>
-      <p>About me text here!</p>
+      <p className={style.Text}>About me text here!</p>
     </div>
 
     </div>

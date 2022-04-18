@@ -10,8 +10,11 @@
 
 html{
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 
-/* *{
-  border: 1px red solid;
+/* ::-webkit-scrollbar {
+  display: none;
 } */
