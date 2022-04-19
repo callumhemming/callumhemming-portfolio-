@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive"
 import classListify from "../utils/classListify.js"
 import Avatar from "antd/lib/avatar/avatar"
 
+import Project from "../components/Project"
 
 import style from "../styles/homepage.module.css"
 import Image from "next/image"
@@ -30,6 +31,9 @@ export default function Home() {
     <TechStack/>
     </div>
     
+
+    {/* <Project/> */}
+
     </>
 
 
