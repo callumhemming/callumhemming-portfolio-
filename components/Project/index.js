@@ -1,10 +1,15 @@
-// import { Typography } from "antd"
+import { Typography } from "antd"
+import style from "./project.module.css"
 
-// export default function Project(){
-//     const {Title} = Typography
-//     <article>
-//         <Title>Project Name</Title>
-//         <img></img>
-//         <p></p>
-//     </article>
-// }
+
+export default function Project(){
+    const {Title} = Typography
+
+
+    return(
+        <div className = {style.projectContainer}>
+    test
+    </div>
+        
+    )
+}

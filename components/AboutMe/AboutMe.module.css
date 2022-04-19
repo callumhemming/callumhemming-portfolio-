@@ -1,9 +1,9 @@
 
 .aboutMeContainer{
  display: grid;
- grid-template-columns: 20% 1fr;
+ grid-template-columns: 5% 1fr;
  grid-template-rows: 19.4% 1fr ;
-height: 100vh;
+height: 100%;
 width: 100vw;
 overflow: hidden;
 }
@@ -17,12 +17,14 @@ overflow: hidden;
 }
 
 .aboutMeContentContainer{
+    
     grid-area: 1/2/-1/-2;
 width: 100%;
-background-color: #F7B801;
+background-color: #614282;
 }
 
 .aboutMeTitle{
+    
     font-weight: 700;
     font-family: Poppins;
     margin: 0.5em;
@@ -31,9 +33,10 @@ background-color: #F7B801;
 }
 
 .Text{
+    color:#F7B801;
     grid-area: 2/2/-1/-1;
-    margin: 2rem;
-    padding: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     font-size: 1.5em;
     
 }

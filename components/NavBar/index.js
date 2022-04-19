@@ -11,21 +11,21 @@ export default function NavBar() {
   return (
      <div className={style.navBarContainer}>
 
+       <GiHamburgerMenu
+       size={60}
+         className={classListify(
+           [style.burger],
+           [isOpen ? style.burgerOpen : ""]
+         )}
+         onClick={() => {
+           setIsOpen(!isOpen);
+         }}
+       />
         {isOpen && 
         <div className={style.menu}>{navArray}</div>}
 
        
 
-          <GiHamburgerMenu
-          size={60}
-            className={classListify(
-              [style.burger],
-              [isOpen ? style.burgerOpen : ""]
-            )}
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          />
        
         
 
