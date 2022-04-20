@@ -2,9 +2,8 @@
 
  display: grid;
  grid-template-columns:  repeat(10%, 3);
- grid-template-rows: repeat(1fr, 5);
+ grid-template-rows: 1 1fr 1fr 1fr 1fr;
 
- /* grid-auto-flow: 100%; */
  height: 100vh;
  font-size: 5em;
 
@@ -14,25 +13,46 @@
 
  overflow: hidden;
 
+ /* border:solid 1px red; */
+
 }
-
-.ToolBoxContainer{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.ToolBoxContainer > h4{
-    font-size:7em;
-}
-
-
-.techStackContainer > *{
+.title{
+    /* border: 1px red solid; */
+    grid-area: 1/1/span 1/span 3;
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.ToolBoxContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    height: 80%;
+    width: 80%;
+
+    
+}
+
+
+
+
+.techStackContainer > *:not(h4){
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    transition-duration: 50ms;
+}
+
+.techStackContainer > *:not(h4):hover{
+    width: 95%;
+    height: 95%;
+    /* border:1px dotted black; */
 }
 
 

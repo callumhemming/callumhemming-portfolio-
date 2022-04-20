@@ -8,10 +8,31 @@ import navArray from "./navData.js";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
+
+  const navPos = isOpen?
+  `transform: translate(0%);
+  ` :
+  `transform: translate(-100%);
+ 
+  `
   return (
      <div className={style.navBarContainer}>
 
-       <GiHamburgerMenu
+    
+       
+        <style jsx>
+          {`
+          
+            .menuOpen{
+              ${navPos}
+            
+          }
+          `}
+        </style>
+        <div className={style.menu +" "+ "menuOpen"}>{navArray} </div>
+
+       
+        <GiHamburgerMenu
        size={60}
          className={classListify(
            [style.burger],
@@ -21,11 +42,6 @@ export default function NavBar() {
            setIsOpen(!isOpen);
          }}
        />
-        {isOpen && 
-        <div className={style.menu}>{navArray}</div>}
-
-       
-
        
         
 

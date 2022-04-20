@@ -1,12 +1,16 @@
 
 .techStackContainer{
     display: flex;
-    width: 100vw;
+    width: 100%;
+    
     justify-content: center;
     align-items: center;
 }
 
-
+.aboutMeTechLayout{
+    display: flex;
+    
+}
 
 /* .left{
     justify-self: flex-start;

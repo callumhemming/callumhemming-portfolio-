@@ -33,13 +33,13 @@ export default function Splash() {
 
         <Link href="#aboutme">
           <div className={style.progressButtonContainer}>
-            <div className={style.arrowLeft}>
+            {/* <div className={style.arrowLeft}>
               <Image src="/arrow.svg" layout="fill" />
-            </div>
+            </div> */}
             <div className={style.progressButton}>LET'S GO!</div>
-            <div className={style.arrowRight}>
+            {/* <div className={style.arrowRight}>
               <Image src="/arrow.svg" layout="fill" />
-            </div>
+            </div> */}
           </div>
         </Link>
 

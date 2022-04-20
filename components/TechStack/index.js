@@ -15,9 +15,11 @@ export default function TechStack({classList}){
     return(
         <div className={style.ToolBoxContainer}>
         
-        <h4>Tool Box</h4>
         
-        <div className={classListify( [style.techStackContainer], [ classList]     )}>
+        <div className={style.techStackContainer}>
+
+            
+        <h4 className={style.title}>Tool Box</h4>
            
             <Tooltip title="React">
             <DiReact className={style.react}/>
