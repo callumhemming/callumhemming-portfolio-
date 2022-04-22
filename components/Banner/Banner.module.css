@@ -1,0 +1,22 @@
+.bannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10em;
+    color:white;
+    font-weight: 700;
+
+    background-image: url("/banner.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
+
+
+    width: 100vw;
+    height:30vh;
+}

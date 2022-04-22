@@ -4,8 +4,8 @@ import {uuid} from "uuidv4"
 
 const navigation = [
     {name:"CV", link:"/callumhemmingcv.pdf"},
-    {name:"About Me", link:"/"},
-    {name:"Projects", link:"/projects"},
+    {name:"About Me", link:"#aboutMe"},
+    {name:"Projects", link:"#projects"},
     // {name:"Blog", link:"/"}
 ]
 

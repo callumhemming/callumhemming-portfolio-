@@ -3,9 +3,10 @@
  display: grid;
  grid-template-columns: 5% 20% 20% 1fr;
  grid-template-rows: 19.4% 1fr ;
-height: 100%;
-width: 100vw;
+height: 200%;
+width: 80%;
 overflow: hidden;
+
 }
 
 

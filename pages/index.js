@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive"
 import Projects from "../components/Projects"
 import style from "../styles/homepage.module.css"
 import React,  { useState, useEffect } from "react"
+import Banner from "../components/Banner"
 
 export default function Home() {
 
@@ -37,6 +38,7 @@ export default function Home() {
       }
       `}
     </style>
+    <Banner id={"aboutMe"} title={"About Me"}/>
   <div className={style.aboutMeTechLayout + " " + "rowMobile"}>
   <AboutMe/>
     <div className={style.techStackContainer}>
@@ -45,7 +47,7 @@ export default function Home() {
   </div>
     
     
-
+  <Banner id={"projects"} title={"Projects"}/>
     <Projects/>
 
     </>

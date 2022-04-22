@@ -5,8 +5,10 @@ import React, { useState } from "react";
 import classListify from "../../utils/classListify.js";
 import navArray from "./navData.js";
 
+
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+
 
 
   const navPos = isOpen?

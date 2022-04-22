@@ -1,8 +1,9 @@
-import projectsData from "./projectsData.js";
+import projectsData from "./projectsData";
 import Project from "../Project";
 import style from "./Projects.module.css";
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
+import { uuid } from "uuidv4";
 
 // justify-content: space-evenly;
 // align-items: flex-start;
@@ -34,7 +35,7 @@ align-items: flex-start;`
 
       <div className={style.projectsContainer + " " + "layout"}>
         {projectsData.map(({ name, link, body, image }) => (
-          <Project name={name} link={link} body={body} image={image} />
+          <Project key={uuid()} name={name} link={link} body={body} image={image} />
         ))}
       </div>
     </>

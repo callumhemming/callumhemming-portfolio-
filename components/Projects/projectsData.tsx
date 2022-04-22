@@ -1,4 +1,12 @@
-const projectsData = [
+/**
+*
+*Projects 
+*
+*
+*/
+type Project={name:string, image:string, body:string, link :string}
+
+const projectsData:Project[] = [
     {name : "Short Circuit",
     image: "/ShortCircuit.png",
     body:"Short Circuit is an app ",
@@ -11,7 +19,7 @@ const projectsData = [
     image: "/Speedify.png",
     body:"rgergergergergerggr",
     link:""
-},
+}
 ]
 
 

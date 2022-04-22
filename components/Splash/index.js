@@ -31,7 +31,7 @@ export default function Splash() {
           </div>
         </div>
 
-        <Link href="#aboutme">
+        <Link href="#aboutMe">
           <div className={style.progressButtonContainer}>
             {/* <div className={style.arrowLeft}>
               <Image src="/arrow.svg" layout="fill" />

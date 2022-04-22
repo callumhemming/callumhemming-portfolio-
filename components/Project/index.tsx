@@ -22,3 +22,5 @@ export default function Project({ name, image, body, link }) {
     </Link>
   );
 }
+
+
