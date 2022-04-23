@@ -3,9 +3,7 @@ import style from "./splash.module.css";
 import { Avatar } from "antd";
 import { Typography } from "antd";
 import { useMediaQuery } from "react-responsive";
-import classListify from "../../utils/classListify.js";
 import Link from "next/link";
-import { AiOutlineDown } from "react-icons/ai";
 import Image from "next/image";
 
 
@@ -56,3 +54,5 @@ export default function Splash() {
     </>
   );
 }
+
+

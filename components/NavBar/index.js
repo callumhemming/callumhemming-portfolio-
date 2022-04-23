@@ -1,9 +1,8 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import style from "./NavBar.module.css";
-import Link from "next/dist/client/link";
 import React, { useState } from "react";
 import classListify from "../../utils/classListify.js";
-import navArray from "./navData.js";
+import navArray from "./navData.tsx";
 
 
 export default function NavBar() {
