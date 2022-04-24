@@ -1,0 +1,22 @@
+.navBarContainer{
+    position: sticky;
+    display: flex;
+
+    top: 0;
+    width: 100vw;
+height: 7em;
+
+padding: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--accent);
+
+    border-radius: 1cm;
+    box-shadow: 2px 11px 15px 5px #000000;
+}
+
+
+.deskButton{
+    color:var(--font-color)
+}

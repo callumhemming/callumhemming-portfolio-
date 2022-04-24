@@ -39,13 +39,14 @@
 }
 
 .burger {
-  position: relative;
+  position: fixed;
+  z-index: 90;
   color: white;
   background-color: black;
-  padding: 5%;
-  z-index: 50;
-  transition-duration: 100ms;
-
+  padding: 1px;
+  bottom:4%;
+  right:5%;
+  transition-duration: 100ms;  
   border-radius: 20%;
   align-self: center;
 }

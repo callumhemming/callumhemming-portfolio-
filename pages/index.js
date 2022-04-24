@@ -6,7 +6,8 @@ import Projects from "../components/Projects";
 import style from "../styles/homepage.module.css";
 import React, { useState, useEffect } from "react";
 import Banner from "../components/Banner";
-import ContactMeForm from "../components/ContactMeForm"
+import NavBar from "../components/NavBar"
+
 
 export default function Home() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
@@ -34,6 +35,7 @@ export default function Home() {
           }
         `}
       </style>
+      <NavBar mobile = {isTabletOrMobile}/>
       <Banner id={"aboutMe"} title={"About Me"} />
       <div className={style.aboutMeTechLayout + " " + "rowMobile"}>
         <AboutMe />

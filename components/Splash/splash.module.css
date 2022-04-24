@@ -11,12 +11,13 @@
   overflow-y: hidden;
   overflow-x: hidden;
 
-  background-image: url("/code-background.jpeg");
-  background-attachment: fixed;
+  /* background-image: url("/code-background.jpeg");
+   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; */
+  background-color: var(--accent);
+} 
 .avatar {
 grid-row:2/2;
 grid-column: 3/3;
@@ -29,6 +30,8 @@ grid-column: 3/3;
   border: 5px var(--light-accent) inset;
   filter: drop-shadow(10px 10px 4px #4444dd);
 } */
+
+
 
 .blobContainer {
   /* grid-area: x / y/ x /y;  */
@@ -59,7 +62,7 @@ bottom: -73%;
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: var(--neutral);
+  /* background-color: var(--accent); */
   filter: blur(30px);
   opacity: 0.5;
   filter: hue-rotate(20deg);
