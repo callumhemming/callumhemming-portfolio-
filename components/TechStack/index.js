@@ -1,11 +1,10 @@
 import style from "./TechStack.module.css"
 
 import {DiReact, DiHtml5} from "react-icons/di"
-import {SiNextdotjs, SiJavascript, SiCsswizardry, SiExpress, SiPostgresql} from "react-icons/si"
+import {SiNextdotjs, SiJavascript, SiCsswizardry, SiExpress, SiPostgresql, SiTypescript} from "react-icons/si"
 import {IoLogoNodejs} from "react-icons/io"
 import {BsGithub} from "react-icons/bs"
 import {FaGitSquare} from "react-icons/fa"
-import classListify from "../../utils/classListify.js"
 import { Tooltip } from "antd"
 
 export default function TechStack({classList}){
@@ -18,7 +17,7 @@ export default function TechStack({classList}){
         
         <div className={style.techStackContainer}>
 
-            
+
         <h4 className={style.title}>Tool Box</h4>
            
             <Tooltip title="React">
@@ -50,6 +49,10 @@ export default function TechStack({classList}){
             </Tooltip>
             <Tooltip title="PostgreSQL">
             <SiPostgresql className={style.postgres}/>
+            </Tooltip>
+
+            <Tooltip title="TypeScript">
+                <SiTypescript className={style.typescript}/>
             </Tooltip>
         </div>
         </div>

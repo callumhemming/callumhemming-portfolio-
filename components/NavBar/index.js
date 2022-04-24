@@ -2,7 +2,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import style from "./NavBar.module.css";
 import React, { useState } from "react";
 import classListify from "../../utils/classListify.js";
-import navArray from "./navData.tsx";
+import navigationList from "./navData.tsx";
+import Link from "next/link"
+import {uuid} from "uuidv4"
+
 
 
 export default function NavBar() {
@@ -30,7 +33,23 @@ export default function NavBar() {
           }
           `}
         </style>
-        <div className={style.menu +" "+ "menuOpen"}>{navArray} </div>
+
+
+        <div className={style.menu +" "+ "menuOpen"}>
+          {navigationList.map(({link, name})=>{
+            return(
+              
+          <Link key={uuid()} href={link}>
+          <button 
+          onClick={()=>{setIsOpen(!isOpen)}} 
+          className={style.button}>
+            {name}
+          </button>
+          </Link>
+            )
+          })
+          
+          } </div>
 
        
         <GiHamburgerMenu

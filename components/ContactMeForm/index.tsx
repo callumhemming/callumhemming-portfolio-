@@ -2,6 +2,8 @@ import { ReactElement } from "react";
 import { Switch } from "antd";
 import style from "./ContactMeForm.module.css";
 import { useState } from "react";
+import Banner from "../Banner"
+import {message as antdMessage} from "antd"
 
 interface Data {
   subject: string;
@@ -12,13 +14,15 @@ interface Data {
 }
 
 export default function ContactMe(): ReactElement {
+
+
   const [subject, setSubject] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [sendCopy, setSendCopy] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-
+  const [submitted, setSubmitted] = useState(false)
+  
   function postEmailData() {
     const data: Data = {
       name,
@@ -35,36 +39,39 @@ export default function ContactMe(): ReactElement {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then(res => {
-      console.log("Response received");
-      if (res.status === 200) {
-        console.log("Response succeeded!");
+    })
+
+    console.log("Response succeeded!");
+    antdMessage.success("Message sent!")
         setSubmitted(true);
         setName("");
         setEmail("");
         setMessage("");
         setSubject("");
-      }
-    });
   }
 
   return (
     <>
       <div className={style.container}>
-        <h1 className={style.title}>Get in Touch!</h1>
+      <Banner id="contactMe" title="Contact Me"/>
+        <p className={style.title}>Feel free to send me an email with this form!</p>
         <form className={style.form}>
           <input
+            value={subject}
             placeholder="Subject"
             onChange={({ target }) => setSubject(() => target.value)}
             className={style.subject}
+            
           />
           <input
+            value={name}
             placeholder="Name"
             onChange={({ target }) => setName(() => target.value)}
             className={style.name}
           />
 
           <input
+            value={email}
             placeholder="Email"
             type="email"
             required={true}
@@ -73,6 +80,7 @@ export default function ContactMe(): ReactElement {
           />
           
           <textarea
+            value={message}
             placeholder="Message"
             onChange={({ target }) => setMessage(() => target.value)}
             className={style.message}

@@ -51,7 +51,10 @@ export default function ({body},res) {
   console.log(nodemailer);
 
   transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
+    if (err) res.status(400)
+    else res.status(200)
   });
+
+
+  
 }

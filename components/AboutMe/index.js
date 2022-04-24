@@ -3,7 +3,8 @@ import style from "./AboutMe.module.css";
 import { useMediaQuery } from 'react-responsive';
 
 export default function AboutMe() {
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1500px)' })
+  //1224
   const [aboutMeContainerMargin, setAboutMeContainerMargin] = useState("")
 
   useEffect(()=>{

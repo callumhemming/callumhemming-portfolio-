@@ -5,6 +5,7 @@
  grid-template-rows: 19.4% 1fr ;
 height: 200%;
 width: 80%;
+min-width: 350px;
 overflow: hidden;
 
 }
@@ -12,7 +13,7 @@ overflow: hidden;
 
 .sideBar{
     grid-area: 1/1 / -1 /2;
-    background-color: purple;
+    background-color: var(--accent);
     
 
 }
@@ -21,21 +22,21 @@ overflow: hidden;
     
     grid-area: 1/3/span 2/span 2;
 width: 100%;
-background-color: #614282;
+background-color: var(--neutral);
 }
 
 .aboutMeTitle{
-    
+    color:var(--accent);
     font-weight: 700;
     font-family: Poppins;
     margin: 0.5em;
     padding: 0.5em;
-    font-size: 4em;
+    font-size:6em;
 }
 
 .Text{
     grid-area: 2/2/-1/-1;
-    color:#F7B801;
+    color:var(--font-color);
     margin: 0.5rem;
     padding: 0.5rem;
     font-size: 1.5em;

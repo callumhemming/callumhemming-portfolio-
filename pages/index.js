@@ -45,7 +45,6 @@ export default function Home() {
       <Banner id={"projects"} title={"Projects"} />
       <Projects />
 
-<ContactMeForm/>
     </>
   );
 }

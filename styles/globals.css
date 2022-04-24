@@ -1,11 +1,11 @@
 @import "./pattern.css";
 
 :root{
-  --main-brand-color: #44CCFF;
-  --light-accent: #35FF69;
-  --dark-accent: #D138BF ;
-  --shade: #7494EA;
-  --title-font: "Catamaran", monospace;
+  --neutral: #265280;
+  --main: #0E2A47;
+  --font-color: white;
+  --font: "Poppins", monospace;
+  --accent: #F79862;
 }
 
 html{
@@ -23,3 +23,8 @@ html{
   background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 } */
+
+body{
+  background: rgb(38,82,128);
+background: radial-gradient(circle, rgba(38,82,128,1) 0%, rgba(14,42,71,1) 100%);
+}

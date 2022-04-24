@@ -1,5 +1,6 @@
 .techStackContainer{
-
+background-color: var(--main);
+border-radius: 1cm;
  display: grid;
  grid-template-columns:  repeat(10%, 3);
  grid-template-rows: 1 1fr 1fr 1fr 1fr;
@@ -9,9 +10,12 @@
 
  gap:0.5em;
  margin:0.5rem;
- padding: 0.5rem;
+ padding: 0.9rem;
+
+ border: 1px var(--accent) solid;
 
  overflow: hidden;
+ min-width: 200px;
 
  /* border:solid 1px red; */
 
@@ -24,6 +28,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    color: var(--font-color);
 }
 
 .ToolBoxContainer{
@@ -32,6 +37,7 @@
     font-size: 1em;
     height: 80%;
     width: 80%;
+    padding: 0.3%;
 
     max-width: 700px;
     max-height: 900px;
@@ -48,6 +54,9 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 0.2cm;
+    padding: 0.1em;
 
     transition-duration: 50ms;
 }
@@ -104,4 +113,6 @@
 }
 
 
-
+.typescript{
+    grid-area: 5/1;
+}
