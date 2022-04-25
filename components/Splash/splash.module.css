@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 6% 12% 1fr 12% 6%;
   grid-template-rows: 12% 1fr 1fr 1fr;
- 
+ z-index: 1000;
 
   /* border: 3px red solid; */
 
@@ -16,7 +16,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  background-color: var(--accent);
+  
 } 
 .avatar {
 grid-row:2/2;
@@ -60,19 +60,18 @@ bottom: -73%;
 
 .backgroundFilter {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   position: absolute;
   /* background-color: var(--accent); */
-  filter: blur(30px);
-  opacity: 0.5;
-  filter: hue-rotate(20deg);
+  background-color: var(--accent);
+
 }
 
 .progressButtonContainer {
     grid-column:2/span 3;
     grid-row: 4/span 1;;
 
-z-index: 30;
+z-index: 1001;
   flex-direction: row;
   position: relative;
   display: flex;
