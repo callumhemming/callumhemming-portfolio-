@@ -35,7 +35,7 @@ export default function Home() {
           }
         `}
       </style>
-      <NavBar mobile = {isTabletOrMobile}/>
+      <NavBar/>
       <Banner id={"aboutMe"} title={"About Me"} />
       <div className={style.aboutMeTechLayout + " " + "rowMobile"}>
         <AboutMe />

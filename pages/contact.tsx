@@ -9,7 +9,7 @@ export default function Contact(){
 
     return(
         <>
-        <NavBar mobile={isTabletOrMobile}/>
+        <NavBar/>
         <ContactMeForm/>
         </>
     )
