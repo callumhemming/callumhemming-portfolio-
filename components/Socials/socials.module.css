@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -14,4 +15,17 @@
     padding: 1em;
     background-color: var(--accent);
     border-radius: 35px 0px 0px 35px;;
+}
+
+.container > *{
+    cursor: pointer;
+    transition-duration: 700ms;
+}
+
+.container>*:hover{
+    transform: scale(90%);
+}
+
+.tooltip{
+    z-index: 10000;
 }

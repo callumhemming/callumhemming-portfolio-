@@ -4,6 +4,8 @@ import style from "./ContactMeForm.module.css";
 import { useState } from "react";
 import Banner from "../Banner"
 import {message as antdMessage} from "antd"
+import {Input} from "antd"
+import {Button} from "antd"
 
 interface Data {
   subject: string;
@@ -15,6 +17,7 @@ interface Data {
 
 export default function ContactMe(): ReactElement {
 
+  const {TextArea} = Input
 
   const [subject, setSubject] = useState("");
   const [name, setName] = useState("");
@@ -56,21 +59,21 @@ export default function ContactMe(): ReactElement {
       <Banner id="contactMe" title="Contact Me"/>
         <p className={style.title}>Feel free to send me an email with this form!</p>
         <form className={style.form}>
-          <input
+          <Input
             value={subject}
             placeholder="Subject"
             onChange={({ target }) => setSubject(() => target.value)}
             className={style.subject}
             
           />
-          <input
+          <Input
             value={name}
             placeholder="Name"
             onChange={({ target }) => setName(() => target.value)}
             className={style.name}
           />
 
-          <input
+          <Input
             value={email}
             placeholder="Email"
             type="email"
@@ -79,7 +82,7 @@ export default function ContactMe(): ReactElement {
             className={style.email}
           />
           
-          <textarea
+          <TextArea
             value={message}
             placeholder="Message"
             onChange={({ target }) => setMessage(() => target.value)}
@@ -96,7 +99,7 @@ export default function ContactMe(): ReactElement {
           />
 </div>
           
-          <button type="submit"
+          <Button
             className={style.submit}
             onClick={e => {
               e.preventDefault();
@@ -104,7 +107,7 @@ export default function ContactMe(): ReactElement {
             }}
           >
             Send me a message!
-          </button>
+          </Button>
         </form>
       </div>
     </>

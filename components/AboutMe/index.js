@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import style from "./AboutMe.module.css";
 import { useMediaQuery } from 'react-responsive';
+import Link from "next/link"
 
 export default function AboutMe() {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1500px)' })
@@ -37,7 +38,23 @@ export default function AboutMe() {
      
       <h1 className={style.aboutMeTitle + " " + "aboutMeTitleRes"}>About me</h1>
       <hr></hr>
-      <p className={style.Text}>Hi, I’m Callum Hemming, I’m a full Stack Web Developer who has just completed a 16 week intensive bootcamp with the School of Code. Before the bootcamp, I studied Film at the University of Brighton, and I’m now interested in taking my passion of telling stories to web development and joining your team to help build incredible apps and websites. My interests lie across the entire spectrum of web development, and I am a keen an passionate learner. </p>
+      <p className={style.Text}>
+      Welcome to my portfolio page, here you will find my projects and links to contact me. 
+<p>
+  
+  My name is Callum Hemming, I am a full-stack web developer, proficient in React, Next.js, Typescript, Javascript and PostgreSQL.
+  </p>
+  <p>
+  
+    I have just completed an intense bootcamp with the School of Code and I am looking for full time employment anywhere on the stack; my greatest tool is my ability to learn independently and quickly. 
+    </p>
+<p>
+  Please feel me to contact me <Link href={"/contact"}>here.</Link> 
+  </p>
+  
+
+        
+         </p>
     </div>
 
     </div>
