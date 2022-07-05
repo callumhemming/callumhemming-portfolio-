@@ -6,7 +6,7 @@ interface NavItem{
 }
 
 const navigationList: NavItem[] = [
-    {name:"CV", link:"/callumhemmingcv2022v4.pdf"},
+    {name:"CV", link:"/Callum_Hemming_CV_2022.PDF"},
     {name:"About Me", link:"/#aboutMe"},
     {name:"Projects", link:"/#projects"},
     {name:"Get in touch!", link:"/contact"}
